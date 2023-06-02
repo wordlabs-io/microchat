@@ -6,7 +6,7 @@ Since 2017 we have been seeing a lot of research work going into large language 
 
 Obviously, forget training, even loading a 20B parameter model can be hard on some of the best consumer grade laptops without a good deal of optimisation. For instance, I have a laptop with 16GB RAM and a GTX 1650 (4GB VRAM) and I can only load upto 1B parameter models with optimisation. Most people I know don't have even these specs.
 
-However, many papers are suggesting that finetuning smaller models on specific tasks instead of getting a single model to generalise across everything might yield better results [Teaching Small Language Models to Reason](https://arxiv.org/pdf/2212.08410.pdf). I wondered how far we could really take this, so I started testing some extremely small models from the FLAN-T5 family on test datasets, and the results were actually usable. Not great, not perfect, but usable. 
+However, many papers are suggesting that finetuning smaller models on specific tasks instead of getting a single model to generalise across everything might yield better results [Teaching Small Language Models to Reason](https://arxiv.org/pdf/2212.08410.pdf). While the paper meant to suggest that ~100B parameter models could be outperformed by ~10B parameter models, I wondered how far we could really take this, so I started testing some extremely small models from the FLAN-T5 family on test datasets, and the results were actually usable. Not great, not perfect, but usable. 
 
 This SDK enables you to fine tune your own chat models on your own data ON YOUR OWN LAPTOPS. Go crazy, and do share your findings with us as well!
 
@@ -17,6 +17,9 @@ On my laptop with the following specs, I was able to finetune up to FLAN-T5 Base
 | RAM | GPU | CPU | 
 |------|------|------|
 |16GB | GTX 1650 | i5 10th Gen|
+
+## Supported Models
+[FLAN T5 Family](https://huggingface.co/docs/transformers/model_doc/flan-t5) 
 
 ## Usage
 ```python
