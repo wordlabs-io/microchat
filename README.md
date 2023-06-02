@@ -18,6 +18,8 @@ On my laptop with the following specs, I was able to finetune up to FLAN-T5 Base
 |------|------|------|
 |16GB | GTX 1650 | i5 10th Gen|
 
+Inference on CPU takes about 2s to generate about 50 tokens
+
 ## Supported Models
 [FLAN T5 Family](https://huggingface.co/docs/transformers/model_doc/flan-t5) 
 
