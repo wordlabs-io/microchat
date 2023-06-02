@@ -24,6 +24,11 @@ Inference on CPU takes about 2s to generate about 50 tokens
 [FLAN T5 Family](https://huggingface.co/docs/transformers/model_doc/flan-t5) 
 
 ## Usage
+```
+git clone https://github.com/wordlabs-io/microchat.git
+pip install -r requirements.txt 
+```
+
 ```python
 from microchat import core 
 
